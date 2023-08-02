@@ -9,7 +9,7 @@ public class CalculatorTest {
     @DisplayName("덧셈 계산 검증")
     @Test
     void add_test() {
-        Calculator calculator = Calculator.generateFromString("1 2 3 4");
+        Calculator calculator = Calculator.from("1 2 3 4");
 
         int result = calculator.calculate();
 
@@ -19,7 +19,7 @@ public class CalculatorTest {
     @DisplayName("곱셈 계산 검증")
     @Test
     void multiply_test() {
-        Calculator calculator = Calculator.generateFromString("/mul 2 8 7");
+        Calculator calculator = Calculator.from("/mul 2 8 7");
 
         int result = calculator.calculate();
 
@@ -29,7 +29,7 @@ public class CalculatorTest {
     @DisplayName("계산 실패")
     @Test
     void fail_test() {
-        assertThatThrownBy(() -> Calculator.generateFromString("s 3 4 1"))
+        assertThatThrownBy(() -> Calculator.from("s 3 4 1"))
                 .isInstanceOf(NumberFormatException.class);
     }
 

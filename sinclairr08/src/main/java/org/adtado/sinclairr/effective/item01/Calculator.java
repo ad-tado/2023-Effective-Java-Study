@@ -14,7 +14,7 @@ public class Calculator {
                 .boxed()
                 .collect(Collectors.toList());
     }
-    public static Calculator generateFromString(String s) {
+    public static Calculator from(String s) {
         if (s.startsWith("/mul")) {
             return new Calculator(parse(s.substring(5)), '*');
         }
