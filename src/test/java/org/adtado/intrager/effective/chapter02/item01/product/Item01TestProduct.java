@@ -1,5 +1,7 @@
 package org.adtado.intrager.effective.chapter02.item01;
 
+import org.adtado.intrager.effective.chapter02.item01.response.Item01ProductApiResponse;
+
 public class Item01TestProduct {
     private static final Item01TestProduct instance = new Item01TestProduct();
     private final Item01ProductApiResponse TEST_PRODUCT;
