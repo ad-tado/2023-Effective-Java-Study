@@ -4,10 +4,10 @@
 
 ## 1. 생성자 대신 정적 팩터리를 사용한 예를 들어주시고, 예를 든 이유를 설명해주세요.
 
-예시는 `Item01FashionApiResponseTest`를 참고해주시면 되겠습니다.
-`FashionApiResponse`는 `FashionConstructor`을 인자로 받아 `FashionApiResponse`에 맞게 형식을 바꾸는 역할을 합니다.
+예시는 `Item01ProductResponseTest`의 `fromInstanceTest()`를 참고해주시면 되겠습니다.
+`ProductResponse`는 `ProductApiResponse`을 인자로 받아 `ProductResponse`에 맞게 형식을 바꾸는 역할을 합니다.
 
-이 예를 든 이유는 생성자와 비슷하지만, 
+이 예를 든 이유는 생성자와 비슷하지만,
 1. 정적 팩터리도 쓰는 경우가 있어 실습하며 왜 사용하는지 이해하고 싶었고
 2. Enum 타입을 활용해서 같이 이해해보고 싶었습니다.(정말 잘 몰랐음)
 
@@ -19,13 +19,13 @@
 그럴 때마다 매번 같은 이름의 생성자를 인스턴스만 바꾸거나 추가해서 나열하면 관리하기 복잡해질 수 있습니다.
 
 정적 팩토리 메서드를 활용하면
-1. 무슨 목적으로 만든 건지 파악할 수 있어 코드의 가독성을 높일 수 있습니다. 
+1. 무슨 목적으로 만든 건지 파악할 수 있어 코드의 가독성을 높일 수 있습니다.
 2. Enum, String, int 등의 다른 타입이 왔을 때 형식을 바꿀 수 있습니다.
-3. `담긴 재고`라는 객체를 하나만 만들 수 있도록 제어할 수 있습니다.
-
+3. 호출할 때마다 새로운 객체를 생성할 필요가 없습니다.
 
 ## 2. 생성자로 바꿀 수 있다면, 생성자로도 바꿔주세요.
 
+`Item01ProductResponseTest`의 `constructorInstanceTest()`를 참고해주세요
 
 ---
 
