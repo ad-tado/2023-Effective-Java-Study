@@ -1,5 +1,8 @@
 package org.adtado.intrager.effective.chapter02.item01;
 
+import org.adtado.intrager.effective.chapter02.item01.response.ClothesSize;
+import org.adtado.intrager.effective.chapter02.item01.response.Item01ProductApiResponse;
+
 import java.time.LocalDate;
 
 public class Item01ProductResponse {

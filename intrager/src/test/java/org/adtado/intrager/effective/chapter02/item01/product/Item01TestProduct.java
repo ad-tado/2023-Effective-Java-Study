@@ -1,4 +1,4 @@
-package org.adtado.intrager.effective.chapter02.item01;
+package org.adtado.intrager.effective.chapter02.item01.product;
 
 import org.adtado.intrager.effective.chapter02.item01.response.Item01ProductApiResponse;
 

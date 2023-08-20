@@ -1,5 +1,8 @@
 package org.adtado.intrager.effective.chapter02.item01;
 
+import org.adtado.intrager.effective.chapter02.item01.product.Item01TestProduct;
+import org.adtado.intrager.effective.chapter02.item01.response.ClothesSize;
+import org.adtado.intrager.effective.chapter02.item01.response.Item01ProductApiResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

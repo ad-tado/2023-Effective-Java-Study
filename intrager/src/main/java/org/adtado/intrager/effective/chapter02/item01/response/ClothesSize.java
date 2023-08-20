@@ -1,4 +1,4 @@
-package org.adtado.intrager.effective.chapter02.item01;
+package org.adtado.intrager.effective.chapter02.item01.response;
 
 public enum ClothesSize {
     TOP_S("SMALL"),
